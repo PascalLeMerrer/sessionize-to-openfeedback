@@ -31,7 +31,7 @@ const transformSessions = (originalData, rooms) => {
     const transformedSessions = {}
     originalData.sessions.forEach(session => {
         transformedSessions[session.id] = {
-            "speakers": [session.speakers[0]],
+            "speakers": session.speakers,
             "tags": [],
             "title": session.title,
             "id": session.id,
